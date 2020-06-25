@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+android:background="#ffffff"
+    >
+<LinearLayout
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:divider="@drawable/line_bottom"
+    android:showDividers="end"
+    android:orientation="vertical"
+    >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="match_parent">
+  <ImageView
+      android:id="@+id/arrow"
+    android:layout_marginLeft="20.5dp"
+      android:layout_alignParentLeft="true"
+    android:layout_width="11dp"
+    android:layout_height="11dp"
+    android:src="@drawable/usecar_list_icon_into"
+
+    />
+    <TextView
+        android:layout_toRightOf="@+id/arrow"
+        android:layout_alignTop="@+id/arrow"
+        android:id="@+id/custom_tv"
+        android:layout_marginLeft="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="客户名   x3"
+        android:textColor="#ff333333"
+        android:textSize="16sp"
+        />
+    <TextView
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/arrow"
+        android:id="@+id/daldate_tv"
+        android:layout_marginRight="28.5dp"
+        android:layout_gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="05-06 13:00"
+        android:textColor="#ff333333"
+        android:textSize="12sp"
+        />
+
+    <TextView
+        android:id="@+id/dalnum_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15710927362 | 归属地"
+        android:layout_below="@id/custom_tv"
+        android:layout_alignLeft="@id/custom_tv"
+        android:textColor="#ff999999"
+        android:textSize="11sp"
+        />
+
+    <TextView
+        android:layout_below="@id/daldate_tv"
+        android:layout_alignRight="@id/daldate_tv"
+        android:id="@+id/daltime_tv"
+        android:layout_marginRight="13dp"
+        android:layout_gravity="end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5秒"
+        android:textColor="#ff333333"
+        android:textSize="12sp"
+        />
+</RelativeLayout>
+
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/delete_bt"
+            android:drawableTop="@drawable/delete"
+            android:button="@null"
+            android:text="删除"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <RadioButton
+            android:gravity="center"
+            android:id="@+id/add_bt"
+            android:drawableTop="@drawable/jiarukehu"
+            android:button="@null"
+            android:text="加入客户"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RadioButton
+            android:gravity="center"
+            android:id="@+id/mark_bt"
+            android:drawableTop="@drawable/biaoji"
+            android:button="@null"
+            android:text="标记"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RadioButton
+            android:gravity="center"
+            android:id="@+id/handdal_bt"
+            android:drawableTop="@drawable/dianhua"
+            android:button="@null"
+            android:text="手动拨打"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RadioButton
+            android:gravity="center"
+            android:id="@+id/sms_bt"
+            android:drawableTop="@drawable/duanxing"
+            android:button="@null"
+            android:text="发送短信"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>

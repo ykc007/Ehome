@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">电销小秘</string>
+    <string name="dial">拨号</string>
+    <string name="customer">客户</string>
+    <string name="table">报表</string>
+    <string name="mine">我的</string>
+    <string name="on_all">接通/全部</string>
+    <string name="all_time">总时长</string>
+    <string name="average_time">平均时长</string>
+    <string name="daily_office">日常办公</string>
+    <string name="notice">通知</string>
+    <string name="check_work">考勤</string>
+    <string name="out_work">外勤</string>
+    <string name="statistics">统计</string>
+    <string name="call_statistics">通话统计</string>
+    <string name="call_ranking">通话排行</string>
+    <string name="order_statistics">订单统计</string>
+    <string name="collection_statistics">回款统计</string>
+    <string name="deal_manage">成交管理</string>
+    <string name="sales_order">销售订单</string>
+    <string name="contract">合同</string>
+    <string name="collection">回款</string>
+    <string name="business_manage">业务管理</string>
+    <string name="customer_seas">客户公海</string>
+    <string name="follow_reminder">回访提醒</string>
+    <string name="mine_task">我的任务</string>
+    <string name="other_function">其他功能</string>
+    <string name="payment_function">付费功能</string>
+    <string name="staff_manager">员工管理</string>
+    <string name="agent_login">代理登录</string>
+    <string name="settings">设置</string>
+
+    <string name="personal_data">个人资料</string>
+    <string name="update_login_pwd">修改登录密码</string>
+    <string name="about_us">关于我们</string>
+    <string name="user_agreement">用户协议</string>
+    <string name="current_version">当前版本</string>
+    <string name="logout">退出登录</string>
+
+    <string name="head_portrait">头像</string>
+    <string name="full_name">姓名</string>
+    <string name="phone_number">电话号码</string>
+
+    <string name="old_pwd">旧密码</string>
+    <string name="new_pwd">新密码</string>
+    <string name="confirm_pwd">确认密码</string>
+    <string name="please_enter">请输入...</string>
+    <string name="confirm">确认</string>
+
+    <string name="this_month_can_settlement">本月可结算</string>
+    <string name="last_month_can_settlement">上月可结算</string>
+    <string name="customer_number">客户人数</string>
+    <string name="whole_achievement">整体业绩</string>
+    <string name="pay_money_open">付费开通</string>
+
+    <string name="please_enter_staff_name">请输入员工姓名</string>
+    <string name="please_enter_phone">请输入手机号</string>
+    <string name="please_enter_pwd">请输入密码</string>
+
+    <string name="reminder_time">提醒时间</string>
+    <string name="reminder_content">提醒内容</string>
+    <string name="add_reminder_content">添加提醒内容</string>
+
+    <string name="personal_certification">个人认证</string>
+    <string name="business_certification">企业认证</string>
+    <string name="mine_personal">我是个人用户 >></string>
+    <string name="mine_business">我是企业用户 >></string>
+    <string name="please_enter_conpany_name">请输入公司全称</string>
+    <string name="please_enter_your_name">请输入您的称谓</string>
+    <string name="please_select_area">请选择县市</string>
+    <string name="please_select_trade">请选择行业</string>
+    <string name="please_enter_code">请输入推广码</string>
+
+    <string name="forgetpd">忘记密码</string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="profile">登录即代表已阅读并同意本软件的《用户注册协议》</string>
+    <string name="thirdlogin">第三方登录</string>
+    <string name="codeString">请输入验证码</string>
+    <string name="getcode">获取验证码</string>
+    <string name="settingpd">请设置登录密码</string>
+    <string name="nowregister">立即注册</string>
+</resources>

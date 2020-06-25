@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/btn_gray"
+    android:orientation="vertical">
+<RelativeLayout
+    android:id="@+id/details_actionbar"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="49dp">
+    <ImageView
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/back_details"
+        android:layout_marginLeft="28.5dp"
+        android:layout_width="9dp"
+        android:layout_height="16dp"
+        android:src="@drawable/btn_back_menu"
+        />
+    <TextView
+        android:id="@+id/details_tv"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="客户详情"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#ff343434"
+        android:textSize="17sp"
+        />
+
+    <ImageView
+        android:layout_toRightOf="@id/details_tv"
+        android:layout_centerVertical="true"
+        android:layout_width="21dp"
+        android:layout_height="21dp"
+        android:src="@drawable/tonghua"
+        android:layout_marginLeft="70dp"
+        />
+
+    <LinearLayout
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="24dp"
+        android:layout_centerVertical="true"
+        android:id="@+id/more_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/more"
+        />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/more"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/more"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
+
+ <RelativeLayout
+     android:id="@+id/ctinfo_re"
+     android:background="@drawable/g1"
+     android:layout_width="match_parent"
+     android:layout_height="196dp">
+     <TextView
+         android:layout_alignParentLeft="true"
+         android:layout_marginLeft="26.5dp"
+         android:id="@+id/company_name"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="公司姓名"
+         android:textColor="#ffffffff"
+         android:textSize="21sp"
+         />
+     <TextView
+         android:layout_below="@id/company_name"
+         android:layout_marginTop="12dp"
+         android:layout_alignLeft="@id/company_name"
+         android:id="@+id/custom_name"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="客户姓名"
+         android:textColor="#ffffffff"
+         android:textSize="14sp"
+         />
+     <TextView
+         android:id="@+id/details_phone"
+         android:layout_below="@id/company_name"
+         android:layout_marginTop="12dp"
+         android:layout_toRightOf="@id/custom_name"
+         android:layout_marginLeft="19dp"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="15712074625"
+         android:textColor="#ffffffff"
+         android:textSize="14sp"
+         />
+     <TextView
+         android:id="@+id/address"
+         android:layout_below="@id/custom_name"
+         android:layout_marginTop="11dp"
+         android:layout_alignLeft="@id/custom_name"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="归属地"
+         android:textColor="#ffffffff"
+         android:textSize="14sp"
+         />
+
+     <TextView
+         android:id="@+id/creattime"
+         android:layout_below="@id/custom_name"
+         android:layout_marginTop="11dp"
+         android:layout_toRightOf="@id/address"
+         android:layout_marginLeft="15dp"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="创建于 2020-05-12"
+         android:textColor="#ffffffff"
+         android:textSize="14sp"
+         />
+     <ImageView
+         android:layout_below="@id/address"
+         android:id="@+id/customfflow"
+         android:src="@drawable/customfflow"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"/>
+
+ </RelativeLayout>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_marginTop="-20dp"
+    android:id="@+id/page"
+    android:background="#ffffff"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+<com.viewpagerindicator.TabPageIndicator
+    android:id="@+id/tab"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+ <android.support.v4.view.ViewPager
+     android:id="@+id/viewpage"
+     android:layout_width="match_parent"
+     android:layout_height="0dp"
+     android:layout_weight="1"
+     />
+
+</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/btn_gray"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/iv_back_bg"
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/setting_dal_pop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15.5dp"
+            android:text="设置拨打间隔"
+            android:singleLine="false"
+            android:maxEms="4"
+            android:textColor="#ff333333"
+            android:textSize="14sp"
+            android:layout_alignBottom="@id/re_pop"
+            />
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:id="@+id/re_pop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+
+            >
+            <ImageButton
+
+                android:id="@+id/autodal_bt_pop"
+
+
+                android:layout_width="23dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="23dp"
+                android:src="@drawable/zhidongbohao" />
+            <TextView
+                android:layout_marginTop="5.5dp"
+                android:layout_below="@+id/autodal_bt_pop"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开始自动拨号"
+                android:textColor="#ff333333"
+                android:textSize="14sp"
+                />
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="清除全部"
+            android:textColor="#ff333333"
+            android:layout_gravity="end"
+            android:textSize="14sp"
+            android:layout_marginRight="15.5dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignBaseline="@+id/setting_dal_pop"
+            />
+
+        <EditText
+            android:gravity="center"
+            android:id="@+id/phon_pop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:textColor="#ff333333"
+            android:textSize="24sp"
+            android:layout_below="@id/re_pop"
+            />
+    </RelativeLayout>
+
+    <!--<View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/btn_gray"/>-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/keyboard_bg"
+        android:overScrollMode="never"></android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

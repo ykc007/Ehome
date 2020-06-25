@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+<!--    <color name="colorPrimary">#00ffffff</color>-->
+<!--    <color name="colorPrimaryDark">#00ffffff</color>-->
+<!--    <color name="colorAccent">#00ffffff</color>-->
+<!--    <color name="transparent">#00ffffff</color>-->
+    <color name="color_ffffff">#ffffff</color>
+    <color name="color_000000">#000000</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_f5f5f5">#f5f5f5</color>
+    <color name="color_27a2ff">#27a2ff</color>
+    <color name="color_00d528">#00d528</color>
+    <color name="color_ff6f28">#ff6f28</color>
+    <color name="color_df5f73">#DF5F73</color>
+    <color name="color_3a465a">#3A465A</color>
+    <color name="color_98a4b8">#98A4B8</color>
+    <color name="color_d1ddf1">#D1DDF1</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_f7f7f7">#f7f7f7</color>
+    <color name="color_93cbff">#93cbff</color>
+
+
+
+    <color name="keyboard_bg">#BDBDBD</color>
+    <color name="iv_back_bg">#F5F5F5</color>
+    <color name="key_normal_bg">#F5F5F5</color>
+    <color name="key_pressed_bg">#33000000</color>
+    <color name="btn_gray">#E0E0E0</color>
+</resources>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+ <RelativeLayout
+     android:layout_marginTop="37dp"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+
+     <ImageView
+         android:layout_marginLeft="33dp"
+         android:layout_width="9dp"
+         android:layout_height="16dp"
+         android:layout_gravity="left"
+         android:src="@drawable/btn_back_menu"
+         />
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="@string/register"
+         android:textColor="#ff333333"
+         android:textSize="18sp"
+
+         android:layout_centerInParent="true"
+         />
+
+
+ </RelativeLayout>
+
+
+    <EditText
+        android:layout_marginTop="52dp"
+        android:id="@+id/phone_re"
+        android:layout_width="325dp"
+        android:layout_height="45dp"
+        android:background="@drawable/edittext"
+        android:drawableLeft="@drawable/shouji"
+        android:drawablePadding="19.5dp"
+        android:hint="@string/please_enter_phone"
+        android:inputType="number"
+        android:paddingLeft="19.5dp"
+        android:layout_gravity="center_horizontal"
+        />
+
+<RelativeLayout
+    android:layout_marginTop="24.5dp"
+    android:layout_width="325dp"
+    android:layout_height="45dp"
+    android:layout_gravity="center_horizontal"
+    >
+
+    <EditText
+        android:id="@+id/code"
+        android:layout_width="325dp"
+        android:layout_height="45dp"
+
+        android:background="@drawable/edittext"
+        android:drawableLeft="@drawable/mima"
+        android:drawablePadding="19.5dp"
+        android:hint="@string/codeString"
+        android:inputType="number"
+        android:paddingLeft="19.5dp" />
+
+    <Button
+        android:id="@+id/ge_code"
+        android:layout_width="83dp"
+        android:layout_height="25dp"
+        android:background="@drawable/getcode"
+        android:textColor="#fffffefe"
+        android:text="@string/getcode"
+        android:layout_centerVertical="true"
+
+        android:layout_marginRight="10dp"
+        android:layout_alignRight="@id/code"
+        android:gravity="center_horizontal" />
+
+</RelativeLayout>
+
+    <EditText
+        android:layout_marginTop="24.5dp"
+        android:id="@+id/passwd_re"
+        android:layout_width="325dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/edittext"
+        android:drawableLeft="@drawable/mima"
+        android:drawablePadding="19.5dp"
+        android:hint="@string/settingpd"
+        android:paddingLeft="19.5dp" />
+
+
+    <Button
+        android:id="@+id/register_re"
+        android:layout_marginTop="43.5dp"
+        android:layout_width="325dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button_selector"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/nowregister"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        />
+
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="23dp"
+        android:id="@+id/profile_re"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/profile"
+        android:textColor="#ffcccccc"
+        android:textSize="12sp"
+        />
+</LinearLayout>

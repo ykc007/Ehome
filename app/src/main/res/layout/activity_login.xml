@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+
+    >
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/forget_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forgetpd"
+        android:textColor="#ff27a2ff"
+        android:textSize="12sp"
+        android:layout_gravity="end"
+        android:layout_marginRight="26dp"
+         />
+
+    <ImageView
+        android:layout_marginTop="25.5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pic_hd"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <EditText
+        android:layout_marginTop="30.5dp"
+        android:id="@+id/phone"
+        android:layout_width="325dp"
+        android:layout_height="45dp"
+        android:background="@drawable/edittext"
+        android:drawableLeft="@drawable/shouji"
+        android:drawablePadding="19.5dp"
+        android:hint="@string/please_enter_phone"
+        android:inputType="number"
+        android:paddingLeft="19.5dp"
+        android:layout_gravity="center_horizontal"
+        />
+
+
+    <EditText
+        android:layout_marginTop="24.5dp"
+        android:id="@+id/password"
+        android:layout_width="325dp"
+        android:layout_height="45dp"
+        android:drawablePadding="19.5dp"
+        android:drawableLeft="@drawable/mima"
+
+        android:background="@drawable/edittext"
+        android:hint="@string/please_enter_pwd"
+        android:inputType="textPassword"
+        android:paddingLeft="19.5dp"
+        android:layout_gravity="center_horizontal"
+        />
+
+
+    <Button
+        android:id="@+id/login_bt"
+        android:layout_marginTop="37.5dp"
+    android:layout_width="325dp"
+    android:layout_height="40dp"
+        android:background="@drawable/button_selector"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/login"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        />
+
+    <Button
+        android:id="@+id/RegButton"
+        android:layout_marginTop="15dp"
+        android:layout_width="325dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button_re"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/register"
+        android:textColor="#ff333333"
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:id="@+id/profile"
+        android:layout_marginTop="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/profile"
+        android:textColor="#ffcccccc"
+        android:textSize="12sp"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="51.5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/thirdlogin"
+        android:textColor="#ff27a2ff"
+        android:textSize="12sp"
+        />
+    <LinearLayout
+        android:layout_marginTop="33dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="33dp"
+            android:layout_height="27dp"
+            android:src="@drawable/tencent_qq"
+            android:layout_marginRight="62.5dp"
+            />
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="33dp"
+            android:layout_height="27dp"
+            android:src="@drawable/weixin_3"
+            />
+
+    </LinearLayout>
+</LinearLayout>

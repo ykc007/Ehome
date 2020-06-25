@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_trip"
+        android:icon="@drawable/ic_bottom_main"
+        android:title="@string/dial" />
+
+    <item
+        android:id="@+id/navigation_customer"
+        android:icon="@drawable/ic_bottom_customer"
+        android:title="@string/customer" />
+
+    <item
+        android:id="@+id/navigation_table"
+        android:icon="@drawable/ic_bottom_table"
+        android:title="@string/table" />
+
+    <item
+        android:id="@+id/navigation_me"
+        android:icon="@drawable/ic_bottom_my"
+        android:title="@string/mine" />
+
+</menu>

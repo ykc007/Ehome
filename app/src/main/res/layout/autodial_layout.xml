@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#000000"
+    >
+
+    <TextView
+        android:layout_marginTop="120.5dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/auto_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15927364826"
+        android:textColor="#ffffffff"
+        android:textSize="33sp"
+        />
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/auto_phone"
+        android:layout_marginTop="28dp"
+        android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="接通中"
+        android:textColor="#ffffffff"
+        android:textSize="13sp"
+        />
+
+    <TextView
+        android:layout_marginTop="17dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/t1"
+        android:id="@+id/t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="共300个号码  剩余200"
+        android:textColor="#ffe7b900"
+        android:textSize="13sp"
+        />
+    <RelativeLayout
+
+        android:layout_marginTop="40.5dp"
+        android:layout_marginLeft="100.5dp"
+        android:id="@+id/startdial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/t2"
+        >
+        <ImageButton
+
+            android:id="@+id/startdial_iv"
+
+
+            android:layout_width="23dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="23dp"
+            android:src="@drawable/start" />
+        <TextView
+            android:layout_marginTop="5.5dp"
+            android:layout_below="@+id/startdial_iv"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始自动拨号"
+            android:textColor="#ff333333"
+            android:textSize="14sp"
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_marginTop="40.5dp"
+        android:layout_marginLeft="44.5dp"
+        android:layout_toRightOf="@id/startdial"
+        android:layout_below="@id/t2"
+        android:id="@+id/Handset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        >
+        <ImageButton
+
+            android:id="@+id/Handset_iv"
+
+
+            android:layout_width="23dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="23dp"
+            android:src="@drawable/handset" />
+        <TextView
+            android:layout_marginTop="5.5dp"
+            android:layout_below="@+id/Handset_iv"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="免提"
+            android:textColor="#ff333333"
+            android:textSize="14sp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@id/startdial"
+        android:layout_marginTop="53dp"
+        android:layout_toLeftOf="@id/add_re"
+        android:layout_marginRight="52.dp"
+        android:id="@+id/delete_re"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        >
+        <ImageButton
+
+            android:id="@+id/delete_re_iv"
+
+
+            android:layout_width="23dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="23dp"
+            android:src="@drawable/delet" />
+        <TextView
+            android:layout_marginTop="5.5dp"
+            android:layout_below="@+id/delete_re_iv"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="删除上一个"
+            android:textColor="#ff333333"
+            android:textSize="14sp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="53dp"
+        android:layout_below="@id/startdial"
+
+        android:layout_centerHorizontal="true"
+        android:id="@+id/add_re"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        >
+        <ImageButton
+
+            android:id="@+id/add_re_iv"
+
+
+            android:layout_width="23dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="23dp"
+            android:src="@drawable/add" />
+        <TextView
+            android:layout_marginTop="5.5dp"
+            android:layout_below="@+id/add_re_iv"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加"
+            android:textColor="#ff333333"
+            android:textSize="14sp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="53dp"
+        android:layout_below="@id/startdial"
+        android:layout_toRightOf="@id/add_re"
+        android:layout_marginLeft="60dp"
+
+        android:id="@+id/list_re"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        >
+        <ImageButton
+
+            android:id="@+id/list_re_iv"
+
+
+            android:layout_width="23dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="23dp"
+            android:src="@drawable/list" />
+        <TextView
+            android:layout_marginTop="5.5dp"
+            android:layout_below="@id/list_re_iv"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="名单"
+            android:textColor="#ff333333"
+            android:textSize="14sp"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>
