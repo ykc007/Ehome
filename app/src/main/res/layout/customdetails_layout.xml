@@ -30,6 +30,7 @@
         />
 
     <ImageView
+        android:id="@+id/callphone"
         android:layout_toRightOf="@id/details_tv"
         android:layout_centerVertical="true"
         android:layout_width="21dp"
@@ -41,19 +42,21 @@
     <LinearLayout
         android:layout_alignParentRight="true"
         android:layout_marginRight="24dp"
-        android:layout_centerVertical="true"
         android:id="@+id/more_details"
+        android:layout_centerVertical="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginRight="4dp"
         android:src="@drawable/more"
         />
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/more"
+            android:layout_marginRight="4dp"
             />
 
         <ImageView
@@ -139,7 +142,7 @@
     android:orientation="vertical"
     android:layout_marginTop="-20dp"
     android:id="@+id/page"
-    android:background="#ffffff"
+    android:background="@drawable/shape_conner_ffffff"
     android:layout_marginLeft="15dp"
     android:layout_marginRight="15dp"
     android:layout_width="match_parent"

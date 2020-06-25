@@ -15,11 +15,11 @@ android:background="#ffffff"
 
 <RelativeLayout
     android:layout_width="match_parent"
-    android:orientation="horizontal"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    >
   <ImageView
       android:id="@+id/arrow"
-    android:layout_marginLeft="20.5dp"
+    android:layout_marginLeft="5.5dp"
       android:layout_alignParentLeft="true"
     android:layout_width="11dp"
     android:layout_height="11dp"
@@ -28,9 +28,8 @@ android:background="#ffffff"
     />
     <TextView
         android:layout_toRightOf="@+id/arrow"
-        android:layout_alignTop="@+id/arrow"
         android:id="@+id/custom_tv"
-        android:layout_marginLeft="4dp"
+        android:layout_marginLeft="@dimen/dp_10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="客户名   x3"
@@ -59,6 +58,7 @@ android:background="#ffffff"
         android:layout_alignLeft="@id/custom_tv"
         android:textColor="#ff999999"
         android:textSize="11sp"
+        android:layout_marginBottom="14dp"
         />
 
     <TextView
@@ -66,12 +66,12 @@ android:background="#ffffff"
         android:layout_alignRight="@id/daldate_tv"
         android:id="@+id/daltime_tv"
         android:layout_marginRight="13dp"
-        android:layout_gravity="end"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="5秒"
         android:textColor="#ff333333"
         android:textSize="12sp"
+        android:layout_marginBottom="14dp"
         />
 </RelativeLayout>
 

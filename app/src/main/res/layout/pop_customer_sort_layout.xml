@@ -20,21 +20,21 @@
             android:layout_height="@dimen/dp_45"
             android:gravity="center_vertical"
             android:padding="@dimen/dp_5"
-            android:text="跟进状态" />
+            android:text="@string/followstate" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="@dimen/dp_45"
             android:gravity="center_vertical"
             android:padding="@dimen/dp_5"
-            android:text="成交等级" />
+            android:text="@string/deallevel" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="@dimen/dp_45"
             android:gravity="center_vertical"
             android:padding="@dimen/dp_5"
-            android:text="客户等级" />
+            android:text="@string/customlevel" />
     </LinearLayout>
 
     <View style="@style/horizontal_line" />

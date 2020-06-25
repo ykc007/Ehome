@@ -21,7 +21,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/dp_10"
             android:layout_marginRight="@dimen/dp_10"
-            android:text="跟进状态"
+            android:text="@string/followstate"
             android:textColor="@color/color_333333"
             android:textSize="@dimen/sp_18" />
 
@@ -90,7 +90,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/dp_10"
             android:layout_marginRight="@dimen/dp_10"
-            android:text="成交进度"
+            android:text="@string/dealprogess"
             android:textColor="@color/color_333333"
             android:textSize="@dimen/sp_18" />
 
@@ -108,7 +108,7 @@
                 android:paddingTop="@dimen/dp_5"
                 android:paddingRight="@dimen/dp_10"
                 android:paddingBottom="@dimen/dp_5"
-                android:text="初访"
+                android:text="@string/earlyvist"
                 android:textColor="@color/color_333333"
                 android:textSize="@dimen/sp_18" />
 
@@ -121,7 +121,7 @@
                 android:paddingTop="@dimen/dp_5"
                 android:paddingRight="@dimen/dp_10"
                 android:paddingBottom="@dimen/dp_5"
-                android:text="意向"
+                android:text="@string/intention"
                 android:textColor="@color/color_333333"
                 android:textSize="@dimen/sp_18" />
 
@@ -134,7 +134,7 @@
                 android:paddingTop="@dimen/dp_5"
                 android:paddingRight="@dimen/dp_10"
                 android:paddingBottom="@dimen/dp_5"
-                android:text="报价"
+                android:text="@string/offer"
                 android:textColor="@color/color_333333"
                 android:textSize="@dimen/sp_18" />
 
@@ -147,7 +147,7 @@
                 android:paddingTop="@dimen/dp_5"
                 android:paddingRight="@dimen/dp_10"
                 android:paddingBottom="@dimen/dp_5"
-                android:text="成交"
+                android:text="@string/deal"
                 android:textColor="@color/color_333333"
                 android:textSize="@dimen/sp_18" />
         </LinearLayout>
@@ -162,7 +162,7 @@
             android:paddingTop="@dimen/dp_5"
             android:paddingRight="@dimen/dp_10"
             android:paddingBottom="@dimen/dp_5"
-            android:text="作废"
+            android:text="@string/cancellation"
             android:textColor="@color/color_333333"
             android:textSize="@dimen/sp_18" />
 
@@ -170,7 +170,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/dp_10"
-            android:text="客户等级"
+            android:text="@string/customlevel"
             android:textColor="@color/color_333333"
             android:textSize="@dimen/sp_18" />
 
@@ -245,7 +245,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginRight="@dimen/dp_40"
                 android:background="@drawable/shape_conner_93cbff_pop"
-                android:text="充值"
+                android:text="@string/pay"
                 android:textColor="@color/color_ffffff"
                 android:textSize="@dimen/sp_20" />
 
@@ -254,7 +254,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/dp_40"
                 android:background="@drawable/shape_conner_27a2ff_pop"
-                android:text="确定"
+                android:text="@string/confirm"
                 android:textColor="@color/color_ffffff"
                 android:textSize="@dimen/sp_20" />
         </LinearLayout>

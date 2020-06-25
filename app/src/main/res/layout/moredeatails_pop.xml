@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/moredetailspop"
+    android:gravity="center"
+    >
+<TextView
+    android:id="@+id/edit_tv"
+    android:gravity="center"
+    android:layout_width="@dimen/dp_80"
+    android:text="@string/edit"
+    android:textColor="#ffffffff"
+    android:textSize="13sp"
+    android:layout_height="@dimen/dp_45"/>
+
+    <TextView
+        android:textColor="#ffffffff"
+        android:textSize="13sp"
+        android:gravity="center"
+        android:id="@+id/delete_tv"
+        android:text="@string/delete"
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="@dimen/dp_45"/>
+</LinearLayout>

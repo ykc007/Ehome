@@ -1,11 +1,17 @@
 package com.ehome.electpin.mvp.presenter;
 
 import android.content.Context;
+import android.util.Log;
 
 import com.ehome.electpin.mvp.contract.LoginContract;
-import com.fly.tour.common.mvp.model.BaseModel;
+import com.ehome.electpin.mvp.model.LoginActModule;
+import com.fly.tour.api.entity.LoginEntity;
+import com.fly.tour.common.mvp.presenter.BasePresenter;
 
-public class LoginActPresent extends LoginContract.Presenter
+import io.reactivex.Observer;
+import io.reactivex.disposables.Disposable;
+
+public class LoginActPresent extends BasePresenter<LoginActModule,LoginContract.View> implements  LoginContract.Presenter
 {
     public LoginActPresent(Context context)
     {
@@ -15,28 +21,42 @@ public class LoginActPresent extends LoginContract.Presenter
     }
 
     @Override
-    public BaseModel initModel()
+    public LoginActModule initModel()
     {
-        return null;
+        return new LoginActModule(mContext);
     }
 
 
     @Override
     public void login(String phone, String password)
     {
-        super.login(phone, password);
+        mModel.login(phone,password).subscribe(new Observer<LoginEntity>()
+        {
+            @Override
+            public void onSubscribe(Disposable d)
+            {
 
+            }
+
+            @Override
+            public void onNext(LoginEntity loginEntity)
+            {
+                Log.i("onNext",loginEntity.code+"");
+            }
+
+            @Override
+            public void onError(Throwable e)
+            {
+
+            }
+
+            @Override
+            public void onComplete()
+            {
+
+            }
+        });
     }
 
-    @Override
-    public void register()
-    {
-        super.register();
-    }
 
-    @Override
-    public void deal()
-    {
-        super.deal();
-    }
 }

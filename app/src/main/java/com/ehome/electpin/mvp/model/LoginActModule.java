@@ -2,32 +2,46 @@ package com.ehome.electpin.mvp.model;
 
 import android.content.Context;
 
+import com.ehome.electpin.entity.Loginentry;
 import com.ehome.electpin.mvp.contract.LoginContract;
+import com.ehome.electpin.utils.SignUtil;
+import com.fly.tour.api.CommonService;
+import com.fly.tour.api.RetrofitManager;
+import com.fly.tour.api.entity.LoginEntity;
+import com.fly.tour.api.entity.SalesOrderEntity;
+import com.fly.tour.api.http.RxAdapter;
+import com.fly.tour.common.mvp.model.BaseModel;
 
-public class LoginActModule extends LoginContract.Model
+import java.util.Map;
+import java.util.TreeMap;
+
+import io.reactivex.Observable;
+
+public class LoginActModule extends BaseModel implements LoginContract.Model
 {
+    CommonService commonService;
     public LoginActModule(Context context)
     {
         super(context);
-    }
-
-    @Override
-    public void login(String phone, String password)
-    {
-        super.login(phone, password);
-
 
     }
 
     @Override
-    public void register()
+    public Observable<LoginEntity> login(String phone, String password)
     {
-        super.register();
+
+        commonService = RetrofitManager.getInstance().getCommonService();
+        Map<String, Object> map = new TreeMap<>();
+
+        map.put("phone",phone);
+
+
+        map.put("password",password);
+        return  commonService.login(SignUtil.getSign(map))
+            .compose(RxAdapter.exceptionTransformer())
+            .compose(RxAdapter.schedulersTransformer());
     }
 
-    @Override
-    public void deal()
-    {
-        super.deal();
-    }
+
+
 }

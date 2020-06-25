@@ -8,7 +8,7 @@
     <RelativeLayout
         android:id="@+id/action_dal"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="50dp"
         android:orientation="horizontal">
 
 
@@ -21,7 +21,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="left"
-            android:text="导入"
+            android:text="@string/import_tv"
             android:textColor="#ff333333"
             android:textSize="15sp"
 
@@ -53,6 +53,7 @@
                 android:layout_width="103.5dp"
                 android:layout_height="28dp"
                 android:background="@drawable/dalbt"
+
                 android:text="已拨打 (134)" />
 
 
@@ -83,7 +84,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_marginRight="14.5dp"
-            android:text="导出"
+            android:text="@string/output_tv"
             android:textColor="#ff333333"
             android:textSize="15sp" />
 
@@ -91,12 +92,13 @@
 
     <android.support.v7.widget.RecyclerView
 
-        android:padding="10dp"
+        android:padding="@dimen/dp_5"
         android:background="#F5F5F5"
         android:id="@+id/customer_list"
         android:layout_width="match_parent"
+        android:layout_weight="1"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp" />
+         />
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -106,12 +108,13 @@
 
 
         <TextView
+            android:gravity="center"
             android:id="@+id/setting_dal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_marginLeft="15.5dp"
-            android:text="设置拨打间隔"
+            android:text="@string/Setdialtime"
             android:singleLine="false"
             android:maxEms="4"
             android:textColor="#ff333333"
@@ -122,7 +125,7 @@
       <RelativeLayout
           android:layout_marginTop="10dp"
           android:id="@+id/re"
-          android:layout_width="match_parent"
+          android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:layout_centerHorizontal="true"
 
@@ -142,7 +145,7 @@
               android:layout_centerHorizontal="true"
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
-              android:text="开始自动拨号"
+              android:text="@string/startautodial"
               android:textColor="#ff333333"
               android:textSize="14sp"
               />
@@ -152,7 +155,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="清除全部"
+            android:text="@string/ClearAll"
             android:textColor="#ff333333"
             android:layout_gravity="end"
             android:textSize="14sp"
@@ -166,7 +169,7 @@
             android:layout_marginLeft="10dp"
             android:layout_below="@id/re"
             android:layout_alignLeft="@id/setting_dal"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="35dp"
             android:id="@+id/dal_pop"
             android:src="@drawable/bohaopan"
             android:layout_width="34dp"

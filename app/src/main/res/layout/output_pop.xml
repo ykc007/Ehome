@@ -12,7 +12,7 @@
         android:layout_marginLeft="26dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="输入邮箱地址"
+        android:text="@string/pleaseemail"
         android:textColor="#ff333333"
         android:textSize="13sp"
         />
@@ -31,7 +31,7 @@
         android:layout_marginTop="122dp"
         android:textSize="15sp"
         android:textColor="#ffffff"
-        android:text="确定"
+        android:text="@string/confirm"
         android:background="#ff2796ff"
         android:id="@+id/sure_bt"
         android:layout_width="104dp"

@@ -1,34 +1,26 @@
 package com.ehome.electpin.mvp.contract;
 
 import android.content.Context;
+import android.content.Intent;
 
+import com.ehome.electpin.entity.Loginentry;
+import com.ehome.electpin.mvp.model.LoginActModule;
+import com.fly.tour.api.entity.LoginEntity;
 import com.fly.tour.common.mvp.model.BaseModel;
 import com.fly.tour.common.mvp.presenter.BasePresenter;
 import com.fly.tour.common.mvp.view.BaseView;
 
+import io.reactivex.Observable;
+
 public interface LoginContract
 {
 
-    abstract class Model extends BaseModel
+     interface Model<T>
     {
-        public Model(Context context)
-        {
-            super(context);
-        }
 
 
-        public void login(String phone,String password)
-        {
+         T login(String phone,String password);
 
-        }
-
-        public void register()
-        {
-        }
-
-        public void deal()
-        {
-        }
 
 
     }
@@ -44,27 +36,15 @@ public interface LoginContract
 
     }
 
-    abstract class Presenter extends BasePresenter
-    {
+    interface Presenter{
 
-        public Presenter(Context context)
-        {
-            super(context);
-        }
 
         /**
          * 登录
          */
-        public void login(String phone ,String password)
-        {
-        }
+         void login(String phone ,String password);
 
-        public void register()
-        {
-        }
 
-        public void deal()
-        {
-        }
+
     }
 }

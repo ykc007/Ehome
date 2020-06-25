@@ -200,7 +200,9 @@ public  class DalFragment extends BaseMvpFragment implements KeyboardAdapter.OnK
                     // 设置PopupWindow 显示的形式 底部或者下拉等
                     // 在某个位置显示
                     popupWindow.setVisibility(View.VISIBLE);
-                    mp.showAtLocation(popupWindow, Gravity.BOTTOM, 0, 30);
+                 mp.showAtLocation(popupWindow, Gravity.BOTTOM, 0, 60);
+
+
                     // 作为下拉视图显示
                     // mPopupWindow.showAsDropDown(mPopView, Gravity.CENTER, 200, 300);
                 }

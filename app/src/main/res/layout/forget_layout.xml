@@ -19,7 +19,7 @@
      <TextView
          android:layout_width="wrap_content"
          android:layout_height="wrap_content"
-         android:text="忘记密码"
+         android:text="@string/forgetpd"
          android:textColor="#ff333333"
          android:textSize="18sp"
 

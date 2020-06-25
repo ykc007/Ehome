@@ -4,6 +4,8 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.view.View;
+import android.widget.LinearLayout;
+import android.widget.PopupWindow;
 
 import com.ehome.electpin.R;
 
@@ -23,14 +25,18 @@ import java.util.ArrayList;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public  class CustomDetailsAct extends BaseMvpActivity
+public class CustomDetailsAct extends BaseMvpActivity implements View.OnClickListener
 {
     @BindView(R.id.viewpage)
     ViewPager viewPager;
 
     @BindView(R.id.tab)
     TabPageIndicator tabPageIndicator;
-    String[] TITLE = new String[] { "日志", "通话", "流转", "订单","合同","回款"};
+    @BindView(R.id.more_details)
+    View more_details;
+
+
+    String[] TITLE = new String[]{"日志", "通话", "流转", "订单", "合同", "回款"};
 
     ArrayList<Fragment> fragmentArrayList = new ArrayList<>();
     LogFragment logFragment = new LogFragment();
@@ -39,7 +45,6 @@ public  class CustomDetailsAct extends BaseMvpActivity
     OrderFragment orderFragment = new OrderFragment();
     ContractFragment contractFragment = new ContractFragment();
     ReturnedmmFragment returnedmmFragment = new ReturnedmmFragment();
-
 
 
     @Override
@@ -59,9 +64,10 @@ public  class CustomDetailsAct extends BaseMvpActivity
         fragmentArrayList.add(contractFragment);
         fragmentArrayList.add(returnedmmFragment);
 
-        FragmentPagerAdapter adapter =new TabPageIndicatorAdapter(getSupportFragmentManager(),fragmentArrayList);
+        FragmentPagerAdapter adapter = new TabPageIndicatorAdapter(getSupportFragmentManager(), fragmentArrayList);
         ButterKnife.bind(this);
         viewPager.setAdapter(adapter);
+        more_details.setOnClickListener(this);
 
         tabPageIndicator.setViewPager(viewPager);
         tabPageIndicator.setOnPageChangeListener(new ViewPager.OnPageChangeListener()
@@ -75,7 +81,7 @@ public  class CustomDetailsAct extends BaseMvpActivity
             @Override
             public void onPageSelected(int i)
             {
-             //   Toast.makeText(getApplicationContext(), TITLE[i], Toast.LENGTH_SHORT).show();
+                //   Toast.makeText(getApplicationContext(), TITLE[i], Toast.LENGTH_SHORT).show();
             }
 
             @Override
@@ -96,5 +102,26 @@ public  class CustomDetailsAct extends BaseMvpActivity
     public BasePresenter initPresenter()
     {
         return null;
+    }
+
+    @Override
+    public void onClick(View view)
+    {
+        switch (view.getId())
+        {
+            case R.id.more_details:
+                details_pop();
+
+        }
+
+    }
+
+    public void details_pop()
+    {
+        View view=this.getLayoutInflater().inflate(R.layout.moredeatails_pop,null);
+        PopupWindow popupWindow= new PopupWindow(view, LinearLayout.LayoutParams.WRAP_CONTENT,LinearLayout.LayoutParams.WRAP_CONTENT);
+        popupWindow.setOutsideTouchable(true);
+        popupWindow.showAsDropDown(more_details,-20,50);
+
     }
 }

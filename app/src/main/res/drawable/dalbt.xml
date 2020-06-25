@@ -4,15 +4,16 @@
     <item android:width="104dp" android:height="28dp"  android:state_checked="true">
 
         <shape android:shape="rectangle">
-            <solid android:color="#ff333333" />
             <gradient android:type="linear" android:useLevel="true" android:startColor="#ff2887ff" android:endColor="#ff27a2ff" android:angle="0" />
-            <corners android:topLeftRadius="5dp" android:topRightRadius="0dp" android:bottomLeftRadius="5dp" android:bottomRightRadius="0dp" />
+            <corners android:topLeftRadius="5dp" android:topRightRadius="5dp" android:bottomLeftRadius="5dp" android:bottomRightRadius="5dp" />
+            <stroke android:color="#288BFF" android:width="1dp"/>
         </shape>
     </item>
 
     <item android:width="103dp" android:height="28dp">
         <shape android:shape="rectangle">
-            <corners android:topLeftRadius="0dp" android:topRightRadius="5dp" android:bottomLeftRadius="0dp" android:bottomRightRadius="5dp" />
+            <stroke android:color="#288BFF"  android:width="0.8dp"/>
+            <corners android:topLeftRadius="5dp" android:topRightRadius="5dp" android:bottomLeftRadius="5dp" android:bottomRightRadius="5dp" />
         </shape>
     </item>
 </selector>

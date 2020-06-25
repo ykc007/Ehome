@@ -16,12 +16,14 @@ import android.widget.TextView;
 
 import com.ehome.electpin.R;
 import com.ehome.electpin.mvp.contract.LoginContract;
+import com.ehome.electpin.mvp.model.LoginActModule;
+import com.ehome.electpin.mvp.presenter.LoginActPresent;
 import com.fly.tour.common.mvp.BaseMvpActivity;
 import com.fly.tour.common.mvp.presenter.BasePresenter;
 import com.fly.tour.common.util.NetUtil;
 
 
-public class Login_Act extends BaseMvpActivity implements LoginContract.View
+public class Login_Act extends BaseMvpActivity<LoginActModule,LoginContract.View,LoginActPresent> implements LoginContract.View
 {
     EditText phone;
     EditText password;
@@ -106,7 +108,7 @@ public class Login_Act extends BaseMvpActivity implements LoginContract.View
 
                 }
 
-               // ((LoginActPresent)mPresenter).login(phoneStr,passwordStr);
+                mPresenter.login(phoneStr,passwordStr);
                 Intent i = new Intent();
                 i.setAction("com.ehome.electpin.ui.PersonalCertificationActivity");
 
@@ -229,8 +231,8 @@ public class Login_Act extends BaseMvpActivity implements LoginContract.View
 
 
     @Override
-    public BasePresenter initPresenter()
+    public LoginActPresent initPresenter()
     {
-        return null;
+        return new LoginActPresent(this);
     }
 }

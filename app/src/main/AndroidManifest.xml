@@ -32,7 +32,6 @@
         android:theme="@style/AppTheme1">
         <activity
             android:name=".ui.activity.MainActivity"
-            android:launchMode="singleInstance"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="ui.activity.MainActivity" />

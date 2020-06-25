@@ -42,6 +42,7 @@ public class PersonalCertificationActivity extends BaseActivity {
             {
                 Intent i = new Intent("ui.activity.MainActivity");
                 startActivity(i);
+                finish();
             }
         });
     }

@@ -9,14 +9,17 @@ import com.fly.tour.api.security.Token;
 import com.fly.tour.api.user.LoginDTO;
 
 import io.reactivex.Observable;
+import retrofit2.http.HEAD;
 import retrofit2.http.Header;
 import retrofit2.http.Headers;
 import retrofit2.http.POST;
 import retrofit2.http.Query;
 
 public interface CommonService {
+
+    @Headers("Content-Type:application/x-www-form-urlencoded")
     @POST("user/login")
-    Observable<LoginEntity> login(@Query("phone") String name, @Query("password") String pwd);
+    Observable<LoginEntity> login( @Query("sign") String sign);
 
     @POST("/oauth/token")
     Observable<Token> getToken(@Header(value = "Authorization") String authorization, @Query("grant_type") String type,

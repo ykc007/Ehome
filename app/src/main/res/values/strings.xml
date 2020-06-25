@@ -80,4 +80,22 @@
     <string name="getcode">获取验证码</string>
     <string name="settingpd">请设置登录密码</string>
     <string name="nowregister">立即注册</string>
+    <string name="edit">编辑</string>
+    <string name="delete">删除</string>
+    <string name="followstate">跟进状态</string>
+    <string name="deallevel">成交等级</string>
+    <string name="customlevel">客户等级</string>
+    <string name="dealprogess">成交进度</string>
+    <string name="earlyvist">初访</string>
+    <string name="intention">意向</string>
+    <string name="offer">报价</string>
+    <string name="deal">成交</string>
+    <string name="cancellation">作废</string>
+    <string name="pay">充值</string>
+    <string name="pleaseemail">输入邮箱地址</string>
+    <string name="Setdialtime">设置拨打间隔</string>
+    <string name="startautodial">开始自动拨号</string>
+    <string name="ClearAll">清除全部</string>
+    <string name="import_tv">导入</string>
+    <string name="output_tv">导出</string>
 </resources>

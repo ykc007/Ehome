@@ -21,7 +21,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_marginLeft="15.5dp"
-            android:text="设置拨打间隔"
+            android:text="@string/Setdialtime"
             android:singleLine="false"
             android:maxEms="4"
             android:textColor="#ff333333"
@@ -52,7 +52,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="开始自动拨号"
+                android:text="@string/startautodial"
                 android:textColor="#ff333333"
                 android:textSize="14sp"
                 />
@@ -62,7 +62,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="清除全部"
+            android:text="@string/ClearAll"
             android:textColor="#ff333333"
             android:layout_gravity="end"
             android:textSize="14sp"
