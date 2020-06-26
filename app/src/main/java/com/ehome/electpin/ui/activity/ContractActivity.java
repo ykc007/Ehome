@@ -23,7 +23,10 @@ import java.util.List;
 /**
  * 合同
  */
-public class ContractActivity extends BaseRefreshActivity<ContractModel, ContractContract.View<ContractEntity.ContractBean>, ContractPresenter, ContractEntity.ContractBean> implements View.OnClickListener, ContractContract.View<ContractEntity.ContractBean> {
+public class ContractActivity extends BaseRefreshActivity<ContractModel,
+        ContractContract.View<ContractEntity.ContractBean>, ContractPresenter,
+        ContractEntity.ContractBean> implements View.OnClickListener,
+        ContractContract.View<ContractEntity.ContractBean> {
 
     RecyclerView recview;
     ContractAdapter contractAdapter;

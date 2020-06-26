@@ -11,7 +11,7 @@
     <include layout="@layout/hearder_layout" />
 
     <com.refresh.lib.DaisyRefreshLayout
-        android:id="@+id/sales_order_refresh"
+        android:id="@+id/daisy_refresh_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scrollbars="none">

@@ -25,8 +25,9 @@ import java.util.Map;
 /**
  * 销售订单
  */
-public class SalesOrderActivity extends BaseRefreshActivity<SalesOrderModel, SalesOrderContract.View<SalesOrderEntity.SalesOrderBean>,
-        SalesOrderPresenter, SalesOrderEntity.SalesOrderBean> implements View.OnClickListener,
+public class SalesOrderActivity extends BaseRefreshActivity<SalesOrderModel,
+        SalesOrderContract.View<SalesOrderEntity.SalesOrderBean>, SalesOrderPresenter,
+        SalesOrderEntity.SalesOrderBean> implements View.OnClickListener,
         SalesOrderContract.View<SalesOrderEntity.SalesOrderBean> {
 
     public Context mContext;

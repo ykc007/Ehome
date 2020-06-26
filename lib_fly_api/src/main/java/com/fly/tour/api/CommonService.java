@@ -2,6 +2,7 @@ package com.fly.tour.api;
 
 import com.fly.tour.api.dto.RespDTO;
 import com.fly.tour.api.entity.BaseEntity;
+import com.fly.tour.api.entity.CollectionEntity;
 import com.fly.tour.api.entity.ContractEntity;
 import com.fly.tour.api.entity.LoginEntity;
 import com.fly.tour.api.entity.SalesOrderEntity;
@@ -32,5 +33,9 @@ public interface CommonService {
     @POST("contract/index")
     Observable<ContractEntity> getContract(@Header(value = "Authorization") String authorization, @Query("page") int page,
                                            @Query("show_num") int show_num);
+
+    @POST("payment/index")
+    Observable<CollectionEntity> getCollection(@Header(value = "Authorization") String authorization, @Query("page") int page,
+                                               @Query("show_num") int show_num);
 
 }

@@ -39,7 +39,7 @@ public class SalesOrderPresenter extends BaseRefreshPresenter<SalesOrderModel, S
         }
         page = 1;
 
-        Map<String, Object> map = new TreeMap<>();
+        final Map<String, Object> map = new TreeMap<>();
         map.put("password", "123456");
         map.put("phone", "13576910486");
 
@@ -65,6 +65,7 @@ public class SalesOrderPresenter extends BaseRefreshPresenter<SalesOrderModel, S
             @Override
             public void onError(Throwable e) {
                 //mView.showNetWorkErrView();
+                mView.stopRefresh();
             }
 
             @Override
@@ -100,7 +101,7 @@ public class SalesOrderPresenter extends BaseRefreshPresenter<SalesOrderModel, S
 
             @Override
             public void onError(Throwable e) {
-
+                mView.stopLoadMore();
             }
 
             @Override

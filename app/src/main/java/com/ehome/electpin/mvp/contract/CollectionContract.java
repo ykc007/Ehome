@@ -1,18 +1,18 @@
 package com.ehome.electpin.mvp.contract;
 
-import com.fly.tour.api.entity.ContractEntity;
+import com.fly.tour.api.entity.CollectionEntity;
 import com.fly.tour.api.entity.SalesOrderEntity;
 import com.fly.tour.common.mvp.view.BaseRefreshView;
 
-public interface ContractContract {
+public interface CollectionContract {
     interface Presenter {
     }
 
-    interface View<ContractBean> extends BaseRefreshView<ContractBean> {
+    interface View<DataBean> extends BaseRefreshView<DataBean> {
 
     }
 
     interface Model {
-        ContractEntity getContracts();
+        CollectionEntity getCollections();
     }
 }
