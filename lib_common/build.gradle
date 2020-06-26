@@ -34,8 +34,6 @@ dependencies {
     api rootProject.ext.support["appcompat-v7"]
     api rootProject.ext.support["recyclerview-v7"]
 
-    api project(":lib_refresh_layout")
-    api project(':lib_fly_api')
 
     api rootProject.ext.dependencies["arouter-api"]
 
@@ -53,6 +51,8 @@ dependencies {
     api (rootProject.ext.dependencies.glide){
         exclude group: 'com.android.support'
     }
+    implementation project(path: ':lib_refresh_layout')
+    implementation project(path: ':lib_fly_api')
     annotationProcessor rootProject.ext.dependencies["glide-compiler"]
 
     api rootProject.ext.dependencies["lifecycle-extensions"]
