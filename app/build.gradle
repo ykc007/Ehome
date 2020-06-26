@@ -27,6 +27,7 @@ dependencies {
     implementation 'fr.avianey.com.viewpagerindicator:library:2.4.1@aar'
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation project(path: ':lib_common')
+    implementation fileTree(dir: 'src\\main\\lib', include: ['*.aar', '*.jar'], exclude: [])
     testImplementation 'junit:junit:4.12'
     implementation 'com.jakewharton:butterknife:8.5.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'

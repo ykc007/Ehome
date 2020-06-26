@@ -13,17 +13,22 @@ import com.ehome.electpin.R;
 
 import java.util.List;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 
 public class KeyboardAdapter extends RecyclerView.Adapter<KeyboardAdapter.KeyboardHolder> {
 
     private Context context;
     private List<String> datas;
+    private List<String> datasdown;
     private OnKeyboardClickListener listener;
 
 
-    public KeyboardAdapter(Context context, List<String> datas) {
+    public KeyboardAdapter(Context context, List<String> datas,List<String> datasdown) {
         this.context = context;
         this.datas = datas;
+        this.datasdown = datasdown;
     }
 
     @Override
@@ -35,7 +40,7 @@ public class KeyboardAdapter extends RecyclerView.Adapter<KeyboardAdapter.Keyboa
     }
 
     private void setListener(final KeyboardHolder holder) {
-        holder.tvKey.setOnClickListener(new View.OnClickListener() {
+        holder.keybord.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if (listener != null) {
@@ -58,20 +63,25 @@ public class KeyboardAdapter extends RecyclerView.Adapter<KeyboardAdapter.Keyboa
         if (position == 13) {
             holder.rlDel.setVisibility(View.VISIBLE);
             holder.tvKey.setVisibility(View.GONE);
-            holder.keyimage.setImageResource(R.drawable.dadianhua);
+            holder.tvKey_down.setVisibility(View.GONE);
+
+            holder.keyimage.setImageResource(R.drawable.zidongbohao_l);
            /* holder.tvKey.setText(datas.get(position));
             holder.tvKey.setBackgroundResource(R.drawable.selector_item_del);*/
         } else if (position == 12) {
             holder.rlDel.setVisibility(View.VISIBLE);
             holder.tvKey.setVisibility(View.GONE);
+            holder.tvKey_down.setVisibility(View.GONE);
             holder.keyimage.setImageResource(R.drawable.bohaopan);
         }
         else if (position == 14) {
             holder.rlDel.setVisibility(View.VISIBLE);
             holder.tvKey.setVisibility(View.GONE);
+            holder.tvKey_down.setVisibility(View.GONE);
             }
         else {
             holder.tvKey.setText(datas.get(position));
+            holder.tvKey_down.setText(datasdown.get(position));
         }
     }
 
@@ -83,16 +93,21 @@ public class KeyboardAdapter extends RecyclerView.Adapter<KeyboardAdapter.Keyboa
     class KeyboardHolder extends RecyclerView.ViewHolder {
 
         public TextView tvKey;
+        public TextView tvKey_down;
         public RelativeLayout rlDel;
         private View convertView;
         public ImageView keyimage;
+        @BindView(R.id.keybord)
+        public  View keybord;
 
         public KeyboardHolder(View itemView) {
             super(itemView);
             convertView = itemView;
             tvKey = itemView.findViewById(R.id.tv_key);
+            tvKey_down = itemView.findViewById(R.id.keydown);
             rlDel = itemView.findViewById(R.id.rl_del);
             keyimage= itemView.findViewById(R.id.keyimage);
+            ButterKnife.bind(this,itemView);
         }
 
         public View getconvertView() {

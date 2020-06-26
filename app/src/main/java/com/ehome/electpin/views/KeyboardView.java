@@ -23,6 +23,7 @@ public class KeyboardView extends RelativeLayout {
     private RelativeLayout rlBack;
     private RecyclerView recyclerView;
     private List<String> datas;
+    private List<String> datasdown;
     private KeyboardAdapter adapter;
     private Animation animationIn;
     private Animation animationOut;
@@ -59,6 +60,23 @@ public class KeyboardView extends RelativeLayout {
 
     // 填充数据
     private void initData() {
+        datasdown =new ArrayList<>();
+        datasdown.add("");
+        datasdown.add("ABC");
+        datasdown.add("DEF");
+        datasdown.add("GHI");
+        datasdown.add("JKL");
+        datasdown.add("MNO");
+        datasdown.add("PQRS");
+        datasdown.add("TUV");
+        datasdown.add("WXYZ");
+        datasdown.add("");
+        datasdown.add("+");
+        datasdown.add("粘贴");
+        datasdown.add("");
+        datasdown.add("");
+        datasdown.add("");
+
         datas = new ArrayList<>();
         for (int i = 0; i < 15; i++) {
             if (i < 9) {
@@ -80,7 +98,7 @@ public class KeyboardView extends RelativeLayout {
     // 设置适配器
     private void initView() {
         recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 3));
-        adapter = new KeyboardAdapter(getContext(), datas);
+        adapter = new KeyboardAdapter(getContext(), datas,datasdown);
         recyclerView.setAdapter(adapter);
     }
 

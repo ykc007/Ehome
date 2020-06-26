@@ -3,6 +3,6 @@
 
     <item android:drawable="@color/key_pressed_bg" android:state_pressed="true"/>
 
-    <item android:drawable="@color/btn_gray"/>
+    <item android:drawable="@android:color/black"/>
 
 </selector>

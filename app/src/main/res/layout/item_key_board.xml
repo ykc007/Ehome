@@ -4,22 +4,37 @@
                 android:layout_height="wrap_content"
                 android:background="@color/btn_gray"
                 android:orientation="vertical"
-                android:padding="1px">
-
+                >
+<LinearLayout
+    android:id="@+id/keybord"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_60"
+    android:orientation="vertical"
+    android:background="@drawable/selector_item_key"
+    >
     <TextView
         android:id="@+id/tv_key"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="@drawable/selector_item_key"
+        android:layout_height="wrap_content"
+
         android:gravity="center"
         android:textColor="@android:color/black"
         android:textSize="22sp"/>
 
+    <TextView
+        android:id="@+id/keydown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="10sp"
+        android:textColor="@android:color/darker_gray"
+        />
+</LinearLayout>
     <RelativeLayout
         android:id="@+id/rl_del"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:background="@drawable/selector_item_del"
+        android:background="@drawable/selector_item_key"
         android:visibility="gone">
 
         <ImageView

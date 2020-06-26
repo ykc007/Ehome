@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent"
-    android:background="#000000"
+    android:background="@drawable/dial_bg"
     >
 
     <TextView
@@ -47,15 +47,15 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/t2"
         >
-        <ImageButton
+        <ImageView
 
             android:id="@+id/startdial_iv"
 
 
-            android:layout_width="23dp"
+            android:layout_width="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_height="23dp"
-            android:src="@drawable/start" />
+            android:layout_height="wrap_content"
+            android:src="@drawable/zdbh_ks" />
         <TextView
             android:layout_marginTop="5.5dp"
             android:layout_below="@+id/startdial_iv"
@@ -63,7 +63,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="开始自动拨号"
-            android:textColor="#ff333333"
+            android:textColor="#ffffff"
             android:textSize="14sp"
             />
     </RelativeLayout>
@@ -79,15 +79,15 @@
         android:layout_height="wrap_content"
 
         >
-        <ImageButton
+        <ImageView
 
             android:id="@+id/Handset_iv"
 
 
-            android:layout_width="23dp"
+            android:layout_width="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_height="23dp"
-            android:src="@drawable/handset" />
+            android:layout_height="wrap_content"
+            android:src="@drawable/zdbh_mt" />
         <TextView
             android:layout_marginTop="5.5dp"
             android:layout_below="@+id/Handset_iv"
@@ -95,7 +95,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="免提"
-            android:textColor="#ff333333"
+            android:textColor="#ffffff"
             android:textSize="14sp"
             />
     </RelativeLayout>
@@ -110,15 +110,15 @@
         android:layout_height="wrap_content"
 
         >
-        <ImageButton
+        <ImageView
 
             android:id="@+id/delete_re_iv"
 
 
-            android:layout_width="23dp"
+            android:layout_width="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_height="23dp"
-            android:src="@drawable/delet" />
+            android:layout_height="wrap_content"
+            android:src="@drawable/zdbh_del" />
         <TextView
             android:layout_marginTop="5.5dp"
             android:layout_below="@+id/delete_re_iv"
@@ -126,7 +126,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="删除上一个"
-            android:textColor="#ff333333"
+            android:textColor="#ffffff"
             android:textSize="14sp"
             />
     </RelativeLayout>
@@ -141,15 +141,15 @@
         android:layout_height="wrap_content"
 
         >
-        <ImageButton
+        <ImageView
 
             android:id="@+id/add_re_iv"
 
 
-            android:layout_width="23dp"
+            android:layout_width="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_height="23dp"
-            android:src="@drawable/add" />
+            android:layout_height="wrap_content"
+            android:src="@drawable/zdbh_del" />
         <TextView
             android:layout_marginTop="5.5dp"
             android:layout_below="@+id/add_re_iv"
@@ -157,7 +157,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="添加"
-            android:textColor="#ff333333"
+            android:textColor="#ffffff"
             android:textSize="14sp"
             />
     </RelativeLayout>
@@ -173,15 +173,15 @@
         android:layout_height="wrap_content"
 
         >
-        <ImageButton
+        <ImageView
 
             android:id="@+id/list_re_iv"
 
 
-            android:layout_width="23dp"
+            android:layout_width="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_height="23dp"
-            android:src="@drawable/list" />
+            android:layout_height="wrap_content"
+            android:src="@drawable/zdbh_md" />
         <TextView
             android:layout_marginTop="5.5dp"
             android:layout_below="@id/list_re_iv"
@@ -189,7 +189,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="名单"
-            android:textColor="#ff333333"
+            android:textColor="#ffffff"
             android:textSize="14sp"
             />
     </RelativeLayout>
