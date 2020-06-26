@@ -20,14 +20,19 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.ehome.electpin.R;
+import com.ehome.electpin.app.EHomeApplication;
 import com.ehome.electpin.mvp.contract.LoginContract;
 import com.ehome.electpin.mvp.model.LoginActModule;
 import com.ehome.electpin.mvp.presenter.LoginActPresent;
 import com.fly.tour.common.mvp.BaseMvpActivity;
 import com.fly.tour.common.mvp.presenter.BasePresenter;
 import com.fly.tour.common.util.NetUtil;
+import com.fly.tour.common.util.ToastUtil;
 import com.tencent.connect.UserInfo;
 import com.tencent.connect.auth.QQToken;
+import com.tencent.mm.opensdk.modelmsg.SendAuth;
+import com.tencent.mm.opensdk.openapi.IWXAPI;
+import com.tencent.mm.opensdk.openapi.WXAPIFactory;
 import com.tencent.tauth.IUiListener;
 import com.tencent.tauth.Tencent;
 import com.tencent.tauth.UiError;
@@ -37,6 +42,7 @@ import org.json.JSONObject;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 
 public class Login_Act extends BaseMvpActivity<LoginActModule, LoginContract.View, LoginActPresent> implements LoginContract.View
@@ -57,6 +63,8 @@ public class Login_Act extends BaseMvpActivity<LoginActModule, LoginContract.Vie
     ImageView qqlogin;
     @BindView(R.id.weixinlogin)
     ImageView   weixinlogin;
+
+
 
     UserInfo qq_info;
     private class BaseUiListener implements IUiListener
@@ -110,7 +118,18 @@ public class Login_Act extends BaseMvpActivity<LoginActModule, LoginContract.Vie
         }
 
     }
+    @OnClick(R.id.weixinlogin)
+    public void setWeixinlogin(View view){
+        if (!EHomeApplication.iwxapi.isWXAppInstalled()) {
+            ToastUtil.showToast("您还未安装微信客户端");
+            return;
+        }
+        final SendAuth.Req req = new SendAuth.Req();
+        req.scope = "snsapi_userinfo";
+        req.state = "diandi_wx_login";
+        EHomeApplication.iwxapi.sendReq(req);
 
+}
 
     @Override
     public int onBindLayout()
@@ -124,6 +143,8 @@ public class Login_Act extends BaseMvpActivity<LoginActModule, LoginContract.Vie
         super.onCreate(savedInstanceState);
 
         mtTencent=Tencent.createInstance("11",this.getApplicationContext());
+
+
     }
 
     @Override
@@ -173,14 +194,7 @@ public class Login_Act extends BaseMvpActivity<LoginActModule, LoginContract.Vie
             }
         });
 
-        weixinlogin.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View view)
-            {
 
-            }
-        });
 
         login_bt.setOnClickListener(new View.OnClickListener()
         {

@@ -7,6 +7,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.Gravity;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -18,6 +19,7 @@ import com.ehome.electpin.R;
 import com.ehome.electpin.entity.CallIndex;
 import com.ehome.electpin.ui.adapter.DallistAapter;
 import com.ehome.electpin.ui.adapter.KeyboardAdapter;
+import com.ehome.electpin.utils.NavigationBarHeightUtils;
 import com.ehome.electpin.views.KeyboardView;
 import com.fly.tour.common.mvp.BaseMvpFragment;
 import com.fly.tour.common.mvp.presenter.BasePresenter;
@@ -40,6 +42,7 @@ public  class DalFragment extends BaseMvpFragment implements KeyboardAdapter.OnK
     KeyboardView dalbord;
 
     public EditText editText;
+    View navi;
 
     @Override
     public void onKeyClick(View view, RecyclerView.ViewHolder holder, int position)
@@ -138,6 +141,10 @@ public  class DalFragment extends BaseMvpFragment implements KeyboardAdapter.OnK
     @Override
     public void initView(View view)
     {
+        navi = getActivity().findViewById(R.id.navigation);
+
+
+
         CallIndex.DataBean dataBean1 = new CallIndex.DataBean();
         dataBean1.setName("客户1");
         dataBean1.setStatus("1992 -11");
@@ -172,6 +179,9 @@ public  class DalFragment extends BaseMvpFragment implements KeyboardAdapter.OnK
         out_pop =getLayoutInflater().inflate(R.layout.output_pop,null);
         mp1 = new PopupWindow(out_pop, LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
         mp1.setBackgroundDrawable(new ColorDrawable());
+        mp1.setFocusable(true);
+        mp1.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE);
+
         mp1.setOutsideTouchable(true);
        popupWindow =getLayoutInflater().inflate(R.layout.mykey,null);
        dalbord = popupWindow.findViewById(R.id.dalbord);
@@ -200,7 +210,14 @@ public  class DalFragment extends BaseMvpFragment implements KeyboardAdapter.OnK
                     // 设置PopupWindow 显示的形式 底部或者下拉等
                     // 在某个位置显示
                     popupWindow.setVisibility(View.VISIBLE);
-                 mp.showAtLocation(popupWindow, Gravity.BOTTOM, 0, 60);
+
+
+
+
+                   // view.getMeasuredWidth(); // 获取宽度
+                //    view.getMeasuredHeight(); // 获取高度
+
+                 mp.showAtLocation(popupWindow, Gravity.BOTTOM, 0,navi.getHeight()+ NavigationBarHeightUtils.getNavigationBarHeight(getActivity()));
 
 
                     // 作为下拉视图显示

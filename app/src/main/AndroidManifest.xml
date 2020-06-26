@@ -235,5 +235,11 @@
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="behind"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+
+        <activity android:name=".wxapi.WXEntryActivity"
+
+            android:exported="true"
+            />
     </application>
 </manifest>
